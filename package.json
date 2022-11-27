@@ -1,0 +1,18 @@
+{
+  "name": "imperium_test_task",
+  "version": "1.0.0",
+  "description": "imperium test task",
+  "main": "app.jsx",
+  "scripts": {
+    "watch": "esbuild app.jsx --outfile=build/index.js --bundle --watch --external:*.png",
+    "build": "esbuild app.jsx --outfile=build/index.js --bundle --minify --external:*.png"
+  },
+  "author": "Rus Sharafiev",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3"
+  }
+}
